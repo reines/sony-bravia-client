@@ -21,7 +21,11 @@ sony-bravia-client can be found in maven central.
 ## Usage
 
 ```java
-final BraviaClient client = new BraviaClient(Client.create(), URI.create("http://192.168.0.104"), "F4:B7:E2:99:3D:50");
+final BraviaClient client = new BraviaClient(
+    Client.create(),
+    URI.create("http://192.168.0.104"),
+    "F4:B7:E2:99:3D:50"
+);
 client.turnOn();
 client.sendCommand(Command.INPUT_HDMI_1);
 ```
