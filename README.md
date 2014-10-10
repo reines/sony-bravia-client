@@ -10,17 +10,21 @@ sony-bravia-client can be found in maven central.
 
 ## Installation
 
-    <dependency>
-        <groupId>com.jamierf</groupId>
-        <artifactId>sony-bravia-client</artifactId>
-        <version>...</version>
-    </dependency>
+```xml
+<dependency>
+    <groupId>com.jamierf</groupId>
+    <artifactId>sony-bravia-client</artifactId>
+    <version>...</version>
+</dependency>
+```
 
 ## Usage
 
-    import com.jamierf.sony.bravia.client.Braviaclient;
-    import com.jamierf.sony.bravia.client.model.Command;
+```java
+import com.jamierf.sony.bravia.client.Braviaclient;
+import com.jamierf.sony.bravia.client.model.Command;
 
-    final BraviaClient client = new BraviaClient(Client.create(), URI.create("http://192.168.0.104"), "F4:B7:E2:99:3D:50");
-    client.turnOn();
-    client.sendCommand(Command.INPUT_HDMI_1);
+final BraviaClient client = new BraviaClient(Client.create(), URI.create("http://192.168.0.104"), "F4:B7:E2:99:3D:50");
+client.turnOn();
+client.sendCommand(Command.INPUT_HDMI_1);
+```
