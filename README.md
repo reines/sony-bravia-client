@@ -29,3 +29,7 @@ final BraviaClient client = new BraviaClient(
 client.turnOn();
 client.sendCommand(Command.INPUT_HDMI_1);
 ```
+
+## License
+
+Released under the [Apache 2.0 License](LICENSE).
