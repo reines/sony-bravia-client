@@ -65,6 +65,10 @@ public class BraviaClient {
         }
     }
 
+    public void turnOff() {
+        sendCommand(Command.POWER_OFF);
+    }
+
     public void sendCommand(final Command code) {
         sendCommand(code.getCode());
     }
